@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/arrayDisplay"
-        android:layout_width="262dp"
-        android:layout_height="177dp"
+        android:layout_width="282dp"
+        android:layout_height="204dp"
         android:fontFamily="casual"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,12 +24,12 @@
         android:id="@+id/nextSreen"
         android:layout_width="133dp"
         android:layout_height="58dp"
-        android:text="Click me"
+        android:text="Next page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
         android:id="@+id/averageDisplay"
@@ -39,10 +39,10 @@
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
         android:id="@+id/averageButton"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.833" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <ImageView
         android:id="@+id/Indle"
@@ -65,5 +65,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.653"
         app:srcCompat="@drawable/idle" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796"
+        tools:text="Clear" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

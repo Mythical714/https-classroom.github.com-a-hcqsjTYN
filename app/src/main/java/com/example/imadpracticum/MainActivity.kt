@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val weatherButton = findViewById<Button>(R.id.weatherButton)
-        val userInfo = findViewById<TextView>(R.id.userInfo)
-        val appName = findViewById<TextView>(R.id.appName)
+        val weatherButton = findViewById<Button>(R.id.weatherButton) //(IIE,2024)
+        val userInfo = findViewById<TextView>(R.id.userInfo) //(IIE,2024)
+        val appName = findViewById<TextView>(R.id.appName) //(IIE,2024)
 
         weatherButton.setOnClickListener() { //(IIE,2024)
             val intent = Intent(this, weatherScreen::class.java)//(IIE,2024)

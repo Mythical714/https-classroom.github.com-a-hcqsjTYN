@@ -1,10 +1,10 @@
 package com.example.imadpracticum
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 
 class weatherScreen : AppCompatActivity() {
@@ -24,26 +24,26 @@ class weatherScreen : AppCompatActivity() {
         setContentView(R.layout.activity_weather_screen)
 
         val arrayDisplay = findViewById<TextView>(R.id.arrayDisplay)
-        val arrayButton = findViewById<Button>(R.id.arrayButton)
-        val averageButton= findViewById<Button>(R.id.arrayButton)
+        val nextScreen= findViewById<Button>(R.id.nextSreen)
+        val averageButton= findViewById<Button>(R.id.averageButton)
         val averageDisplay = findViewById<TextView>(R.id.averageDisplay)
 
-        arrayButton.setOnClickListener(){
-            var weatherDisplay = ""
-            var counter = 0
-            while (counter < 7) {
-                weatherDisplay += "${weather[counter]}\n"
-                counter++
-            }
-            arrayDisplay.text=weatherDisplay
+        var weatherDisplay = ""
+        var counter = 0
+        while (counter < 7) {
+            weatherDisplay += "${weather[counter]}\n"
+            counter++
+           }
+        arrayDisplay.text=weatherDisplay
 
+        averageButton.setOnClickListener(){
+            var final = (22 + 29 + 17 + 17 + 23 + 19 + 17) / 7
+            averageDisplay.text ="The average for this wek is $final"
         }
-        /*averageButton.setOnClickListener(){
-            var average : Int = 7
-            var averageDisplay = ""
-            var counter = 0
-            var array = temp[1+2+3+4+5+6+7]
-            var answer = array + 0 /  average
-        }*/
+        nextScreen.setOnClickListener(){
+            val intent = Intent(this, detailedScreen::class.java)//(IIE,2024)
+            intent.putExtra("final", arrayDisplay.text.toString())//(IIE,2024)
+            startActivity(intent)//(IIE,2024)
+        }
+        }
     }
-}

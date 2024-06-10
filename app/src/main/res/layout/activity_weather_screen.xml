@@ -9,9 +9,9 @@
 
     <TextView
         android:id="@+id/arrayDisplay"
-        android:layout_width="234dp"
-        android:layout_height="152dp"
-        android:text="arrayView"
+        android:layout_width="262dp"
+        android:layout_height="177dp"
+        android:fontFamily="casual"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.169" />
 
     <Button
-        android:id="@+id/arrayButton"
+        android:id="@+id/nextSreen"
         android:layout_width="133dp"
         android:layout_height="58dp"
         android:text="Click me"
@@ -29,12 +29,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.861" />
+        app:layout_constraintVertical_bias="0.946" />
 
     <TextView
         android:id="@+id/averageDisplay"
-        android:layout_width="235dp"
-        android:layout_height="66dp"
+        android:layout_width="261dp"
+        android:layout_height="72dp"
+        android:fontFamily="casual"
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953" />
+        app:layout_constraintVertical_bias="0.833" />
 
     <ImageView
         android:id="@+id/Indle"

@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         val appName = findViewById<TextView>(R.id.appName)
 
         weatherButton.setOnClickListener() { //(IIE,2024)
-            val intent = Intent(this, mainScreen::class.java)//(IIE,2024)
-            intent.putExtra("mainScreen", userInfo.text.toString())//(IIE,2024)
+            val intent = Intent(this, weatherScreen::class.java)//(IIE,2024)
+            intent.putExtra("main", userInfo.text.toString())//(IIE,2024)
             startActivity(intent)//(IIE,2024)
         }
     }

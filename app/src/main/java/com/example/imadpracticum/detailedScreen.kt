@@ -37,3 +37,5 @@ class detailedScreen : AppCompatActivity() {
             }
 
 //Reference
+
+// The IIE. 2024. Introduction To Mobile Application Development[IMAD5112 Module Manual]. The Independent Institute of Education: Unpublished [Assessed 10 June 2024].
